@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --azul_escuro: #302B6F;
+    --azul: #5463AB;
+    --azul_claro: #7680E0;
+    --bege: #C88A49;
+    --amarelo: #E88904;
+    --laranja: #D64D0B;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "DynaPuff", system-ui;
+}
+
+/*
+    HEADER E NAV
+*/
+
+header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-inline: 10px;
+    margin-top:30px;
+    margin-inline: 80px;
+    -webkit-box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.2); 
+    box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.2);
+}
+
+header section, nav {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+header section img {
+    width: 70px;
+    margin-right: 5px;
+}
+
+header nav button {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    margin-inline: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header nav button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+/*
+    Slogan
+*/
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+    width: full;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+#slogan h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 40px;
+    color: var(--amarelo);
+}
+
+#slogan p {
+    margin: 0;
+    padding: 0;
+    color: var(--azul);
+    font-size: 23px;
+    word-break: break-word;
+    width: 30%;
+    text-align: center;
+}
+
+/*
+    Carrossel
+*/
+
+#carrossel {
+    display: flex;
+    flex-direction: column;
+    width: full;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+#carrossel h2 {
+    color: var(--azul);
+    font-size: 40px;
+}
+
+#carrossel ul {
+    list-style: none;
+    display: flex;
+}
+
+#carrossel li {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: var(--amarelo);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-inline: 20px;
+}
+
+#carrossel p {
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--azul);
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
